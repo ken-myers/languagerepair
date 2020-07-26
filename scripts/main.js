@@ -6,6 +6,10 @@ $(window).resize(function(){
 	setMinHeight();
 });
 
+$("#contact-form").submit(function(e){
+	onSubmit(e);
+});
+
 function setMinHeight(){
 	var navHeight = $('#navBar').outerHeight();
     var viewportHeight = $(window).outerHeight();
@@ -14,18 +18,25 @@ function setMinHeight(){
     $('.content').css('min-height',finalHeight);
 }
 
-$('#div-results').on('shown.bs.collapse', function () {
-  this.scrollIntoView({behavior: 'smooth'});
-});
-
-$('#contact-form').submit(function(e){
+function onSubmit(e){
+    //prevent Default functionality
     e.preventDefault();
+
+    //get the action-url of the form
+    var actionurl = e.currentTarget.action;
+
+    //do your own request an handle the results
     $.ajax({
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSfbs-Lia1qOk5VWpvNWWYFxfugn4OOU8EL9QBsR4pbABbWMxg/formResponse',
+        url: actionurl,
         type: 'post',
-        data:$('#contact-form').serialize(),
-        success:function(){
-            // Whatever you want to do after the form is successfully submitted
-        }
+        dataType: 'application/json',
+        data: $("#contact-form").serialize(),
+        success: function(data) {
+        	$("#contact-form").each(function(){
+        		this.reset()
+        	})
+    	}
     });
-});
+}
+
+
