@@ -33,19 +33,25 @@
   		<link rel="stylesheet" href="../styles/main.css">
 	</head>
 	<body>
-		<nav id = "navBar" class = "navbar navbar-expand-md sticky-top">
-			<div class = "container-fluid">
-				<h4 class="text-center">Language Repair</p>
+		<nav id = "navBar" class="navbar sticky-top">
+				<a class = "navbar-brand mx-auto" href="#"><img id = "img-logo" src="../resources/whitelogo.png"></a>
 			</div>
 		</nav>
+
 		<div class="content">
 			<div class="jumbotron jumbotron-fluid text-center" id = "mainJumbo">
 	  			<div class="container">
-	    			<h1 class="display-4">Lorem ipsum dolor</h1>
-	    			<p class="lead pt-5">Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.</p>
+	    			<h1 id = "typyHeader" class="display-4">L</h1>
+	    			<p style = "display: none;" class="lead pt-5" id="typyPara">Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor. Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.</p>
 				</div>
 			</div>
-			<div class = "container">
+			<div class = "container my-5">
+				<h1 class= "text-center">What we do</h1>
+				<p>
+					Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor. Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor. Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor. 
+				</p>
+			</div>
+			<div class = "container mb-5">
 				<h1 class= "text-center">Who we are</h1>
 				<p>
 					<span><img src="ken.png" class = "rounded-circle img-fluid"></span> Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor. Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor. Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor. 
@@ -93,6 +99,9 @@
 				                <textarea id="entry.1176221512" name="entry.1176221512" class="form-control" rows="4" required="required" data-error="Message is required."></textarea>
 				            </div>
 				        </div>
+				        <div id="submitAlert" class = "col alert alert-success mx-3 pb-0 collapse" style="display: none;">
+				        	<p>Your information has been submitted.</p>
+				        </div>
 				        <div class="col-md-12">
 				            <input type="submit" class="btn btn-success btn-send" value="Send message">
 				        </div>
@@ -104,7 +113,7 @@
 				        </div>
 				    </div>
 				</form>	
-				<iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>			
+				<iframe id="hiddenFrame" name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>			
 			</div>
 		</div>
 		<footer id="sticky-footer" class="text-50">
@@ -120,3 +129,12 @@
 
 	</body>
 </html>
+
+
+<!-- TODO:
+
+align logo
+make nav links look nice
+fill in copy
+put in dad image
+make nav links functional -->
