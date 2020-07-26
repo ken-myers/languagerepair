@@ -3,7 +3,7 @@ $(document).ready(function(){
 	setMinHeight();
 });
 
-$('<img/>').attr('src', '../resources/typewriter.jpg').on('load', function() {
+$('<img/>').attr('src', 'resources/typewriter.jpg').on('load', function() {
    $(this).remove();
    doTyping();
 });
