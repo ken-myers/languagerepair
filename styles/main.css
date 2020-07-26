@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 html, body{
 	height:100%;
 	width: 100%;
@@ -12,18 +13,54 @@ html, body{
 	line-height: 5rem;
 }
 */
-/*Quick fix, not encouraged*/
+
+.navbar-toggler-icon{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(247, 249, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 #img-logo{
-	height:100px;
+	height:60px;
 }
 
+
+#bannerLogo{
+	background-color: #5da161;
+
+}
 .navbar{
-	background-color: #5fc76a;
-	padding-left: 1.3rem;
+	background-color: #5da161;
+/*	padding-left: 1.3rem;
+*/}
+
+.nav-link{
+	color:white;
 }
 
-/*#mainJu  mbo{
-	background-color: #57a85f;
-	color:#d8f0da;
-}*/
+.nav-link:hover{
+	color:#d4d9d5;
+}
+
+/*.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+*/
+#mainJumbo{
+	color:#d4d9d5;
+
+	min-height: 22em;
+	
+/*	font-family: 'Courier Prime', monospace;
+*/	
+	background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.52), 
+      rgba(0, 0, 0, 0.52)
+    ),
+    /* bottom, image */
+ 	url("../resources/typewriter.jpg");
+}
