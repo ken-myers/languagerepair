@@ -1,7 +1,11 @@
 
 $(document).ready(function(){
 	setMinHeight();
-    doTyping();
+});
+
+$('<img/>').attr('src', '../resources/typewriter.jpg').on('load', function() {
+   $(this).remove();
+   doTyping();
 });
 
 $(window).resize(function(){
