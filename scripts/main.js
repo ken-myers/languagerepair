@@ -87,8 +87,8 @@ function doTyping(){
     }
 
     typingSpeed=75;
-    mistake = "orem ksp";
-    fix  = "ipsum dolor."
+    mistake = "angusge";
+    fix  = "age Repair"
     delay=0;
     delay+=type(mistake,typingSpeed,"#typyHeader");
     $("#typyHeader").delay(350);
